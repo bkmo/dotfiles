@@ -1,0 +1,13 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a device; this may
+# be used with UUID= as a more robust way to name devices that works even if
+# disks are added and removed. See fstab(5).
+#
+# <file system>             <mount point>  <type>  <options>  <dump>  <pass>
+UUID=0ECD-9B5B                            /boot/efi      vfat    umask=0077 0 2
+/dev/mapper/luks-1 /              btrfs   subvol=@,defaults,noatime,space_cache=v2,compress-force=zstd:1 0 0
+/dev/mapper/luks-1 /home          btrfs   subvol=@home,defaults,noatime,space_cache=v2,compress-force=zstd:1 0 0
+/dev/mapper/luks-1 /var/cache/pacman/pkg btrfs subvol=@var-cache-pacman-pkg,defaults,noatime,space_cache=v2,compress-force=zstd:1 0 0
+/dev/mapper/luks-1 /run/timeshift/backup btrfs defaults,noatime,space_cache=v2,compress-force=zstd:1 0 0
+/dev/mapper/luks-1 /var/log         btrfs   subvol=@log,defaults,noatime,space_cache=v2,compress-force=zstd:1 0 0

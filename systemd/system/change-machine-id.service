@@ -1,0 +1,6 @@
+ 
+[Unit]
+Description="A script to change machine-id"
+
+[Service]
+ExecStart=/usr/local/bin/change-machine-id.sh
