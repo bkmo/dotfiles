@@ -1,0 +1,8 @@
+[Unit]
+Description=Timeshift Snapshots
+Documentation=man:timeshift(1)
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/timeshift --check --scripted
+

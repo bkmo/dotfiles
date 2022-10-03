@@ -1,0 +1,9 @@
+[Unit]
+Description="Timeshift Snapshoot on Boot"
+
+[Timer]
+OnBootSec=2min
+Unit=timeshift-boot.service
+
+[Install]
+WantedBy=multi-user.target

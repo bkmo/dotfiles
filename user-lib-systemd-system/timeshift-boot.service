@@ -1,0 +1,7 @@
+[Unit]
+Description=Create Timeshift Boot Snapshot
+Documentation=man:timeshift(1)
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/timeshift --create --scripted --tags B
