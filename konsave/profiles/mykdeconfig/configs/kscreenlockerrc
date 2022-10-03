@@ -1,0 +1,13 @@
+[$Version]
+update_info=kscreenlocker.upd:0.1-autolock
+
+[Daemon]
+LockGrace=10
+Timeout=40
+
+[Greeter]
+Theme=org.kde.breezedark.desktop
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=/usr/share/wallpapers/Elarun/
+SlidePaths=/usr/share/wallpapers

@@ -1,0 +1,22 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
+
+[2a18c4b2-0c6d-473d-8ae0-aa4308e73ca2]
+Description=Application settings for firefox
+minimize=true
+minimizerule=3
+wmclass=firefox
+wmclassmatch=1
+
+[4cb12cc2-7be9-45f2-8b79-912f4160132f]
+Description=Window settings for tutanota-desktop
+types=1
+wmclass=tutanota-desktop
+wmclassmatch=1
+
+[4face2cd-f296-46fc-9076-74bb118f4d51]
+Description=Application settings for tutanota-desktop
+size=1164,783
+sizerule=3
+wmclass=tutanota-desktop
+wmclassmatch=1

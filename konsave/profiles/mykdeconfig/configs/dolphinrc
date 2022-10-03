@@ -1,0 +1,71 @@
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAwAAAAAAAADgAAAChPwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAyAAAChAAAAF0BAAADAAAAAQAAALgAAAKE/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAQAAADIAAAKEAAABEwEAAAMAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAoBAAADAAAClwAAAoQAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+eDP-1 Height 1536x864=694
+eDP-1 Width 1536x864=1073
+eDP-1 XPosition 1536x864=318
+eDP-1 YPosition 1536x864=101
+
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding
+
+[ContextMenu]
+ShowCopyMoveMenu=true
+
+[DetailsMode]
+DirectorySizeCount=false
+
+[General]
+GlobalViewProps=false
+ModifiedStartupSettings=false
+RememberOpenedTabs=false
+ShowCopyMoveMenu=true
+Version=202
+ViewPropsTimestamp=2021,4,1,19,56,45.009
+
+[IconsMode]
+PreviewSize=48
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+Recent Files[$e]=cookies.sqlite,file:$HOME/.mozilla/firefox/04wo6dcl.Librewolf/cookies.sqlite
+Recent URLs[$e]=file:$HOME/.mozilla/firefox/04wo6dcl.Librewolf/
+detailViewIconSize=16
+
+[KPropertiesDialog]
+eDP-1 Height 1536x864=589
+eDP-1 Height 1920x1080=561
+eDP-1 Width 1536x864=518
+eDP-1 Width 1920x1080=587
+
+[MainWindow]
+MenuBar=Disabled
+RestorePositionForNextInstance=false
+ToolBarsMovable=Disabled
+eDP-1 Height 1344x840=617
+eDP-1 Height 1536x864=658
+eDP-1 Height 1601x901=600
+eDP-1 Height 1920x1080=694
+eDP-1 Width 1344x840=1045
+eDP-1 Width 1536x864=1116
+eDP-1 Width 1601x901=1012
+eDP-1 Width 1920x1080=1182
+eDP-1 XPosition 1344x840=182
+eDP-1 XPosition 1536x864=218
+eDP-1 XPosition 1920x1080=246
+eDP-1 YPosition 1344x840=86
+eDP-1 YPosition 1536x864=148
+eDP-1 YPosition 1920x1080=72
+
+[Open-with settings]
+CompletionMode=1
+History=kwrite,ark,kate,firefox,pamac-installer,gwe,yay,pacman
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,gsthumbnail,svgthumbnail,textthumbnail,ffmpegthumbs
+
+[SettingsDialog]
+eDP-1 Height 1536x864=499
+eDP-1 Height 1920x1080=515
+eDP-1 Width 1536x864=696
+eDP-1 Width 1920x1080=731

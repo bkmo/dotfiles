@@ -1,0 +1,176 @@
+[$Version]
+update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar,icons_remove_effects.upd:IconsRemoveEffects,kwin.upd:animation-speed,style_widgetstyle_default_breeze.upd:StyleWidgetStyleDefaultBreeze
+
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+Color=37,37,37
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.62
+ContrastEffect=1
+Enable=
+IntensityAmount=0.09
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=97,97,97
+ColorAmount=0.021
+ColorEffect=2
+ContrastAmount=0.09
+ContrastEffect=2
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=60,60,60
+BackgroundNormal=37,37,37
+DecorationFocus=60,158,232
+DecorationHover=60,158,232
+ForegroundActive=60,158,232
+ForegroundInactive=218,218,218
+ForegroundLink=37,158,195
+ForegroundNegative=218,60,97
+ForegroundNeutral=246,158,0
+ForegroundNormal=246,246,246
+ForegroundPositive=37,195,97
+ForegroundVisited=158,158,158
+
+[Colors:Complementary]
+BackgroundAlternate=60,60,60
+BackgroundNormal=37,37,37
+DecorationFocus=23,158,255
+DecorationHover=37,195,232
+ForegroundActive=246,158,0
+ForegroundInactive=195,195,195
+ForegroundLink=37,195,232
+ForegroundNegative=241,14,14
+ForegroundNeutral=218,218,37
+ForegroundNormal=246,246,246
+ForegroundPositive=14,218,14
+ForegroundVisited=37,195,232
+
+[Colors:Selection]
+BackgroundAlternate=23,158,246
+BackgroundNormal=60,158,232
+DecorationFocus=60,158,232
+DecorationHover=60,158,232
+ForegroundActive=252,252,252
+ForegroundInactive=246,246,246
+ForegroundLink=252,195,60
+ForegroundNegative=218,60,97
+ForegroundNeutral=246,158,0
+ForegroundNormal=246,246,246
+ForegroundPositive=37,195,97
+ForegroundVisited=218,218,218
+
+[Colors:Tooltip]
+BackgroundAlternate=60,60,60
+BackgroundNormal=37,37,37
+DecorationFocus=60,158,232
+DecorationHover=60,158,232
+ForegroundActive=60,158,232
+ForegroundInactive=218,218,218
+ForegroundLink=37,158,195
+ForegroundNegative=218,60,97
+ForegroundNeutral=246,158,0
+ForegroundNormal=246,246,246
+ForegroundPositive=37,195,97
+ForegroundVisited=158,158,158
+
+[Colors:View]
+BackgroundAlternate=37,37,37
+BackgroundNormal=23,23,23
+DecorationFocus=60,158,232
+DecorationHover=60,158,232
+ForegroundActive=60,158,232
+ForegroundInactive=218,218,218
+ForegroundLink=37,158,195
+ForegroundNegative=218,60,97
+ForegroundNeutral=246,158,0
+ForegroundNormal=246,246,246
+ForegroundPositive=37,195,97
+ForegroundVisited=158,158,158
+
+[Colors:Window]
+BackgroundAlternate=60,60,60
+BackgroundNormal=37,37,37
+DecorationFocus=60,158,232
+DecorationHover=60,158,232
+ForegroundActive=60,158,232
+ForegroundInactive=218,218,218
+ForegroundLink=37,158,195
+ForegroundNegative=218,60,97
+ForegroundNeutral=246,158,0
+ForegroundNormal=246,246,246
+ForegroundPositive=37,195,97
+ForegroundVisited=158,158,158
+
+[DirSelect Dialog]
+DirSelectDialog Size=1057,604
+History Items[$e]=file:$HOME/Documents,file:$HOME/Documents,file:$HOME/Music/TOP 100 Greatest Blues Songs Of All Time   Best Blues Songs 2016,file:$HOME/Downloads/torrents,file:$HOME/Docs,file:$HOME/Downloads,file:$HOME,file:$HOME/PDF,file:$HOME/OneDrive,file:$HOME/Documents,file:$HOME/Pictures,file:$HOME/PDF,file:$HOME/PDF,file:$HOME/PDF,file:$HOME/Pictures,file:$HOME/Documents,file:///var/run/timeshift/backup/timeshift-btrfs/snapshots,file:///,file:$HOME/PDF
+
+[General]
+BrowserApplication=firefox.desktop
+ColorScheme=Breeze SF STALVEIRS
+ColorSchemeHash=bcce7c1c6181c5e14e633cd8301e7a9036b67ac6
+Name=Breeze Dark
+XftHintStyle=hintmedium
+XftSubPixel=rgb
+accentColorFromWallpaper=false
+fixed=Hack Nerd Font Mono,14,-1,5,50,0,0,0,0,0
+font=Noto Sans Medium,14,-1,5,57,0,0,0,0,0,Regular
+menuFont=Noto Sans Medium,14,-1,5,57,0,0,0,0,0,Regular
+shadeSortColumn=true
+smallestReadableFont=Noto Sans Medium,12,-1,5,57,0,0,0,0,0,Regular
+toolBarFont=Noto Sans Medium,14,-1,5,57,0,0,0,0,0,Regular
+widgetStyle=Breeze
+
+[Icons]
+Theme=breeze-square-dark
+
+[KDE]
+AnimationDurationFactor=0.5
+ColorScheme=BreezeLight
+LookAndFeelPackage=org.kde.breezedark.desktop
+ShowDeleteCommand=true
+SingleClick=false
+contrast=4
+widgetStyle=Klassy
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=2
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Show Bookmarks=false
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=true
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=false
+Speedbar Width=175
+View Style=Simple
+
+[KScreen]
+ScaleFactor=1.25
+ScreenScaleFactors=eDP-1=1.25;DP-1=1.25;HDMI-1=1.25;DP-2=1.25;HDMI-2=1.25;
+
+[PreviewSettings]
+MaximumRemoteSize=0
+
+[WM]
+activeBackground=37,37,37
+activeBlend=255,255,255
+activeFont=Noto Sans Medium,14,-1,5,57,0,0,0,0,0,Regular
+activeForeground=246,246,246
+inactiveBackground=37,37,37
+inactiveBlend=60,60,60
+inactiveForeground=158,158,158
