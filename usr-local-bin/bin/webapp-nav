@@ -1,0 +1,67 @@
+#!/bin/bash
+
+## Navbar On/Off for Webapp-Manager
+
+fQuit() {
+	[ "$1" -eq 0 ] && echo -e "\n$2" || echo -e "\n$2" >&2
+	exit $1
+}
+
+fUsage() {
+	echo -e "\nUsage: $0 [-on] [-off]"
+	echo -e "
+Optional Arguments:
+    -on           Start Nav Bar ON
+    -off          Start Nav Bar OFF"
+}
+
+fNavon() {
+	if [ ! -e userChrome.css ]; then
+		fQuit 1 "Exiting: userChrome.css not found in the current directory."
+		fi
+> userChrome.css
+
+	fQuit 0 "All done! Navbar will be shown."
+}
+
+fNavoff() {
+	if [ ! -e userChrome.css ]; then
+		fQuit 1 "Exiting: userChrome.css not found in the current directory."
+		fi
+cat /usr/share/webapp-manager/firefox/profile/chrome/userChrome.css > userChrome.css
+
+	fQuit 0 "All done! Navbar will be hidden."
+}
+
+echo -e "\n\n"
+echo "This script should be run from your Webapp-Manager Firefox App"
+echo "profile directory chrome folder."
+
+echo -e "\nLocated at ~/.local/share/ice/firefox/(App Name)/chrome/ \n"
+
+[ "$1" == '-on' ] && fNavon
+[ "$1" == '-off' ] && fNavoff
+
+select option in Nav-On Nav-Off Help Exit; do
+	case $option in
+		Nav-On)
+			fNavon
+			;;
+		Nav-Off)
+			fNavoff
+			;;
+			Help)
+			fUsage
+			echo -e "\nThis script modifies the userChrome.css to Hide/Unhide the Nav Bar."
+			echo "Selecting Nav-On will turn the Nav Bar ON"
+			echo "Selecting Nav-Off will turn the Nav Bar OFF"
+			echo "Staring with webapp-nav -on parameter will auto run Nav Bar ON"
+			echo "Staring with webapp-nav -off parameter will auto run Nav Bar OFF"
+echo -e "\n\n"
+			;;
+		Exit)
+			fQuit 0
+			;;
+	esac
+done
+
