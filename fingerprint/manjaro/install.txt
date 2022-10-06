@@ -1,0 +1,30 @@
+ 
+Install:  fprintd   and libfprint  ( libfprint-vfs0090 available via AUR ) , ***pam_fprint may not be necessary***
+
+add    "IgnorePkg   = libfprint fprintd"   to /etc/pacman.conf
+ 
+ --------------------------------------------------
+ 
+[ Enroll, Verify ]
+
+fprintd-enroll -f "right-index-finger" "$USER"
+
+fprintd-verify -f  "right-index-finger" "$USER"
+
+fprintd-enroll -f "right-ring-finger" "$USER"
+
+fprintd-verify -f  "right-ring-finger" "$USER"
+
+fprintd-list
+
+fprintd-delete
+
+----------------------------------------------------------------
+[ Pam Config ]
+
+[ system-auth,  system-local-login,  lightdm ]
+auth [success=2 default=ignore] pam_fprintd.so max_tries=2 timeout=10
+auth [success=1 default=ignore] pam_unix.so nullok_secure try_first_pass
+
+[ sddm ]
+auth sufficient pam_fprintd.so

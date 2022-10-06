@@ -1,0 +1,13 @@
+ 
+[Desktop Entry]
+Type=Service
+Encoding=UTF-8
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/x-zstd-compressed-tar;application/x-zstd-compressed-tar;
+Icon=octopi
+Actions=InstallWithPacman;
+
+[Desktop Action InstallWithPacman]
+Name=Install package
+Icon=control-center2
+Exec=kdesu konsole -e /bin/sh -c "pacman -U %U; read -p 'Press Enter to exit'"

@@ -139,6 +139,20 @@ sortMode=-1
 Image=file:///usr/share/wallpapers/Elarun/contents/images/2560x1600.png
 SlidePaths=/usr/share/wallpapers
 
+[Containments][46]
+ItemGeometries-1920x1080=
+ItemGeometriesHorizontal=
+activityId=00000000-0000-0000-0000-000000000000
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][46][Wallpaper][org.kde.image][General]
+Image=file:///usr/share/wallpapers/Next/contents/images/1920x1080.jpg
+
 [Containments][8]
 activityId=
 formfactor=2
@@ -153,7 +167,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][8][Applets][10][Configuration]
-PreloadWeight=40
+PreloadWeight=60
 
 [Containments][8][Applets][11]
 immutability=1
@@ -284,4 +298,4 @@ shownItems=org.kde.plasma.battery,org.kde.plasma.bluetooth
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/FF.txt,0,826f60f7-98de-46af-b71f-e48bf5dd518f,desktop:/github.txt,0,826f60f7-98de-46af-b71f-e48bf5dd518f,desktop:/chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop,0,desktop:/chrome-hpdgfpebmfbhajagoeabmmedfbpopgim-Default.desktop,desktop:/restore-dotfiles,0,826f60f7-98de-46af-b71f-e48bf5dd518f,file:///home/bkmo/0,0,0
+screenMapping=desktop:/chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop,0,desktop:/chrome-hpdgfpebmfbhajagoeabmmedfbpopgim-Default.desktop,desktop:/restore-dotfiles,0,826f60f7-98de-46af-b71f-e48bf5dd518f,desktop:/github.txt,0,826f60f7-98de-46af-b71f-e48bf5dd518f,file:///home/bkmo/0,0,0,desktop:/FF.txt,0,826f60f7-98de-46af-b71f-e48bf5dd518f

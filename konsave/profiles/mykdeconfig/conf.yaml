@@ -98,6 +98,7 @@ export:
             - aurorae
             - icons
             - wallpapers
+            - kservices5
 
     home_folder:
         location: "$HOME/"
