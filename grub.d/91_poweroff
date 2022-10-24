@@ -1,9 +1,0 @@
-#!/bin/sh
-
-echo "Adding poweroff option." >&2
-
-cat << EOF
-menuentry 'Poweroff' --class shutdown --id poweroff {
-	halt
-}
-EOF

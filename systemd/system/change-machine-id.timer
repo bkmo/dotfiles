@@ -1,9 +1,0 @@
-[Unit]
-Description="Changes machine-id on boot"
-
-[Timer]
-OnBootSec=3min
-Unit=change-machine-id.service
-
-[Install]
-WantedBy=multi-user.target
