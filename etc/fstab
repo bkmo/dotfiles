@@ -1,24 +1,19 @@
 # Static information about the filesystems.
-# See fstab(5) for details. Slightly modded after Install
+# See fstab(5) for details.
 
 # <file system> <dir> <type> <options> <dump> <pass>
 # /dev/mapper/ainstnvme0n1p2
-UUID=266cc75a-1350-4b78-a39e-d59aea231225	/         	btrfs     	rw,noatime,ssd,space_cache=v2,compress=zstd:1,subvolid=256,subvol=/@	0 1
+UUID=2efa593d-51f7-4850-b61c-48795cfd6bc5	/         	btrfs     	rw,noatime,ssd,space_cache=v2,compress=zstd:1,subvol=/@	0 0
 
 # /dev/nvme0n1p1
-UUID=EE18-1975      	/boot     	vfat      	rw,noatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+UUID=EDA4-E769      	/boot     	vfat      	rw,noatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
 
 # /dev/mapper/ainstnvme0n1p2
-#UUID=266cc75a-1350-4b78-a39e-d59aea231225	/.snapshots	btrfs     	#rw,noatime,ssd,space_cache=v2,compress=zstd:1,subvolid=260,subvol=/@.snapshots	#0 2
+UUID=2efa593d-51f7-4850-b61c-48795cfd6bc5	/home     	btrfs     	rw,noatime,ssd,space_cache=v2,compress=zstd:1,subvol=/@home	0 0
 
 # /dev/mapper/ainstnvme0n1p2
-UUID=266cc75a-1350-4b78-a39e-d59aea231225	/home     	btrfs     	rw,noatime,ssd,space_cache=v2,compress=zstd:1,subvolid=257,subvol=/@home	0 2
+UUID=2efa593d-51f7-4850-b61c-48795cfd6bc5	/var/cache/pacman/pkg	btrfs     	rw,noatime,ssd,space_cache=v2,compress=zstd:1,subvol=/@pkg	0 0
 
 # /dev/mapper/ainstnvme0n1p2
-UUID=266cc75a-1350-4b78-a39e-d59aea231225	/var/cache/pacman/pkg	btrfs     	rw,noatime,ssd,space_cache=v2,compress=zstd:1,subvolid=259,subvol=/@pkg	0 2
+UUID=2efa593d-51f7-4850-b61c-48795cfd6bc5	/var/log  	btrfs     	rw,noatime,ssd,space_cache=v2,compress=zstd:1,subvol=/@log	0 0
 
-# /dev/mapper/ainstnvme0n1p2
-UUID=266cc75a-1350-4b78-a39e-d59aea231225	/var/log  	btrfs     	rw,noatime,ssd,space_cache=v2,compress=zstd:1,subvolid=258,subvol=/@log	0 2
-
-# added for timeshift snapshot mount
-UUID=266cc75a-1350-4b78-a39e-d59aea231225 /run/timeshift/backup btrfs defaults,noatime,space_cache=v2,compress=zstd:1 0 0

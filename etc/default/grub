@@ -3,7 +3,7 @@
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT="quiet rd.udev.log_level=3 nowatchdog nmi_watchdog=0 cryptdevice=UUID=2edf8b6e-ef52-4649-9887-ca1d84dccd34:luksdev root=/dev/mapper/luksdev"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=efifb:nobgrt rd.udev.log_level=3 nowatchdog nmi_watchdog=0 cryptdevice=PARTUUID=e6ea5005-4ff9-43eb-b5fc-18612861b373:luksdev root=/dev/mapper/luksdev"
 
 # Preload both GPT and MBR modules so that they are not missed
 GRUB_PRELOAD_MODULES="part_gpt part_msdos"
@@ -58,6 +58,5 @@ GRUB_DISABLE_SUBMENU=y
 # documentation on GRUB_DISABLE_OS_PROBER, if still want to enable this
 # functionality install os-prober and uncomment to detect and include other
 # operating systems.
-GRUB_ENABLE_CRYPTODISK=y
 #GRUB_DISABLE_OS_PROBER=false
 GRUB_THEME="/boot/grub/themes/arch/theme.txt"

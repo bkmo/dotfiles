@@ -16,11 +16,10 @@ tss:x:975:975:tss user for tpm2:/:/usr/bin/nologin
 uuidd:x:68:68::/:/usr/bin/nologin
 avahi:x:974:974:Avahi mDNS/DNS-SD daemon:/:/usr/bin/nologin
 polkitd:x:102:102:PolicyKit daemon:/:/usr/bin/nologin
-rtkit:x:133:133:RealtimeKit:/proc:/usr/bin/nologin
-sddm:x:973:973:Simple Desktop Display Manager:/var/lib/sddm:/usr/bin/nologin
 usbmux:x:140:140:usbmux user:/:/usr/bin/nologin
-bkmo:x:1000:1000::/home/bkmo:/usr/bin/zsh
+sddm:x:973:973:Simple Desktop Display Manager:/var/lib/sddm:/usr/bin/nologin
+bkmo:x:1000:1000:BrianM:/home/bkmo:/usr/bin/zsh
 git:x:972:972:git daemon user:/:/usr/bin/git-shell
-geoclue:x:971:971:Geoinformation service:/var/lib/geoclue:/usr/bin/nologin
-saned:x:970:970:SANE daemon user:/:/usr/bin/nologin
+rtkit:x:133:133:RealtimeKit:/proc:/usr/bin/nologin
+saned:x:971:971:SANE daemon user:/:/usr/bin/nologin
 cups:x:209:209:cups helper user:/:/usr/bin/nologin

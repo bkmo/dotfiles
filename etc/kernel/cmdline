@@ -1,1 +1,0 @@
-cryptdevice=PARTUUID=09c4922a-9a46-487e-9b29-492689326f5a:luksdev root=/dev/mapper/luksdev rootflags=subvol=@ rw intel_pstate=no_hwp rootfstype=btrfs quiet splash nmi_watchdog=0 nowatchdog rd.udev.log_level=3

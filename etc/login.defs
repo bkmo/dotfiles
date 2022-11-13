@@ -3,8 +3,8 @@
 #
 #	$Id$
 #
-# This file is adapted for the use on Arch Linux.
-# Options unsupported due to the use of util-linux or PAM are commented.
+# NOTE: This file is adapted for the use on Arch Linux!
+#       Unsupported options due to the use of util-linux or PAM are removed.
 
 #
 # Delay in seconds before being allowed another attempt after a login failure
@@ -14,24 +14,9 @@
 FAIL_DELAY		3
 
 #
-# Enable logging and display of /var/log/faillog login(1) failure info.
-#
-# FAILLOG_ENAB is currently not supported
-
-#
 # Enable display of unknown usernames when login(1) failures are recorded.
 #
 LOG_UNKFAIL_ENAB	no
-
-#
-# Enable logging of successful logins
-#
-# LOG_OK_LOGINS is currently not supported
-
-#
-# Enable logging and display of /var/log/lastlog login(1) time info.
-#
-# LASTLOG_ENAB is currently not supported
 
 #
 # Limit the highest user ID number for which the lastlog entries should
@@ -43,85 +28,11 @@ LOG_UNKFAIL_ENAB	no
 #LASTLOG_UID_MAX
 
 #
-# Enable checking and display of mailbox status upon login.
-#
-# Disable if the shell startup files already check for mail
-# ("mailx -e" or equivalent).
-#
-# MAIL_CHECK_ENAB is currently not supported
-
-#
-# Enable additional checks upon password changes.
-#
-# OBSCURE_CHECKS_ENAB is currently not supported
-
-#
-# Enable checking of time restrictions specified in /etc/porttime.
-#
-# PORTTIME_CHECKS_ENAB is currently not supported
-
-#
-# Enable setting of ulimit, umask, and niceness from passwd(5) gecos field.
-#
-# QUOTAS_ENAB is currently not supported
-
-#
-# Enable "syslog" logging of su(1) activity - in addition to sulog file logging.
-# SYSLOG_SG_ENAB does the same for newgrp(1) and sg(1).
-#
-# SYSLOG_SU_ENAB is currently not supported
-SYSLOG_SG_ENAB		yes
-
-#
-# If defined, either full pathname of a file containing device names or
-# a ":" delimited list of device names.  Root logins will be allowed only
-# from these devices.
-#
-# CONSOLE is currently not supported
-
-#
-# If defined, all su(1) activity is logged to this file.
-#
-# SULOG_FILE is currently not supported
-
-#
 # If defined, ":" delimited list of "message of the day" files to
 # be displayed upon login.
 #
 MOTD_FILE
 #MOTD_FILE	/etc/motd:/usr/lib/news/news-motd
-
-#
-# If defined, this file will be output before each login(1) prompt.
-#
-# ISSUE_FILE is currently not supported
-
-#
-# If defined, file which maps tty line to TERM environment parameter.
-# Each line of the file is in a format similar to "vt100  tty01".
-#
-# TTYTYPE_FILE is currently not supported
-
-#
-# If defined, login(1) failures will be logged here in a utmp format.
-# last(1), when invoked as lastb(1), will read /var/log/btmp, so...
-#
-# FTMP_FILE is currently not supported
-
-#
-# If defined, name of file whose presence will inhibit non-root
-# logins.  The content of this file should be a message indicating
-# why logins are inhibited.
-#
-# NOLOGINS_FILE is currently not supported
-
-#
-# If defined, the command name to display when running "su -".  For
-# example, if this is defined as "su" then ps(1) will display the
-# command as "-su".  If not defined, then ps(1) will display the
-# name of the shell actually being run, e.g. something like "-sh".
-#
-# SU_NAME is currently not supported
 
 #
 # *REQUIRED*
@@ -139,20 +50,6 @@ MAIL_DIR	/var/spool/mail
 #
 HUSHLOGIN_FILE	.hushlogin
 #HUSHLOGIN_FILE	/etc/hushlogins
-
-#
-# If defined, either a TZ environment parameter spec or the
-# fully-rooted pathname of a file containing such a spec.
-#
-# ENV_TZ is currently not supported
-
-#
-# If defined, an HZ environment parameter spec.
-#
-# for Linux/x86
-# ENV_HZ		HZ=100
-# For Linux/Alpha...
-# ENV_HZ is currently not supported
 
 #
 # *REQUIRED*  The default PATH settings, for superuser and normal users.
@@ -175,23 +72,6 @@ ENV_PATH	PATH=/usr/local/sbin:/usr/local/bin:/usr/bin
 TTYGROUP	tty
 TTYPERM		0600
 
-#
-# Login configuration initializations:
-#
-#	ERASECHAR	Terminal ERASE character ('\010' = backspace).
-#	KILLCHAR	Terminal KILL character ('\025' = CTRL/U).
-#	ULIMIT		Default "ulimit" value.
-#
-# The ERASECHAR and KILLCHAR are used only on System V machines.
-# The ULIMIT is used only if the system supports it.
-# (now it works with setrlimit too; ulimit is in 512-byte units)
-#
-# Prefix these values with "0" to get octal, "0x" to get hexadecimal.
-#
-# ERASECHAR is currently not supported
-# KILLCHAR is currently not supported
-# ULIMIT is currently not supported
-
 # Default initial "umask" value used by login(1) on non-PAM enabled systems.
 # Default "umask" value for pam_umask(8) on PAM enabled systems.
 # UMASK is also used by useradd(8) and newusers(8) to set the mode for new
@@ -211,26 +91,11 @@ UMASK		077
 #
 #	PASS_MAX_DAYS	Maximum number of days a password may be used.
 #	PASS_MIN_DAYS	Minimum number of days allowed between password changes.
-#	PASS_MIN_LEN	Minimum acceptable password length.
 #	PASS_WARN_AGE	Number of days warning given before a password expires.
 #
 PASS_MAX_DAYS	99999
 PASS_MIN_DAYS	0
-# PASS_MIN_LEN is currently not supported
 PASS_WARN_AGE	7
-
-#
-# If "yes", the user must be listed as a member of the first gid 0 group
-# in /etc/group (called "root" on most Linux systems) to be able to "su"
-# to uid 0 accounts.  If the group doesn't exist or is empty, no one
-# will be able to "su" to uid 0.
-#
-# SU_WHEEL_ONLY is currently not supported
-
-#
-# If compiled with cracklib support, sets the path to the dictionaries
-#
-# CRACKLIB_DICTPATH is currently not supported
 
 #
 # Min/max values for automatic uid selection in useradd(8)
@@ -269,28 +134,6 @@ LOGIN_RETRIES		5
 LOGIN_TIMEOUT		60
 
 #
-# Maximum number of attempts to change password if rejected (too easy)
-#
-# PASS_CHANGE_TRIES is currently not supported
-
-#
-# Warn about weak passwords (but still allow them) if you are root.
-#
-# PASS_ALWAYS_WARN is currently not supported
-
-#
-# Number of significant characters in the password for crypt().
-# Default is 8, don't change unless your crypt() is better.
-# Ignored if MD5_CRYPT_ENAB set to "yes".
-#
-# PASS_MAX_LEN is currently not supported
-
-#
-# Require password before chfn(1)/chsh(1) can make any changes.
-#
-# CHFN_AUTH is currently not supported
-
-#
 # Which fields may be changed by regular users using chfn(1) - use
 # any combination of letters "frwh" (full name, room number, work
 # phone, home phone).  If not defined, no changes are allowed.
@@ -299,37 +142,13 @@ LOGIN_TIMEOUT		60
 CHFN_RESTRICT		rwh
 
 #
-# Password prompt (%s will be replaced by user name).
-#
-# XXX - it doesn't work correctly yet, for now leave it commented out
-# to use the default which is just "Password: ".
-# LOGIN_STRING is currently not supported
-
-#
-# Only works if compiled with MD5_CRYPT defined:
-# If set to "yes", new passwords will be encrypted using the MD5-based
-# algorithm compatible with the one used by recent releases of FreeBSD.
-# It supports passwords of unlimited length and longer salt strings.
-# Set to "no" if you need to copy encrypted passwords to other systems
-# which don't understand the new algorithm.  Default is "no".
-#
-# Note: If you use PAM, it is recommended to use a value consistent with
-# the PAM modules configuration.
-#
-# This variable is deprecated. You should use ENCRYPT_METHOD instead.
-#
-# MD5_CRYPT_ENAB is currently not supported
-
-#
 # Only works if compiled with ENCRYPTMETHOD_SELECT defined:
-# If set to MD5, MD5-based algorithm will be used for encrypting password
 # If set to SHA256, SHA256-based algorithm will be used for encrypting password
 # If set to SHA512, SHA512-based algorithm will be used for encrypting password
 # If set to BCRYPT, BCRYPT-based algorithm will be used for encrypting password
 # If set to YESCRYPT, YESCRYPT-based algorithm will be used for encrypting password
 # If set to DES, DES-based algorithm will be used for encrypting password (default)
 # MD5 and DES should not be used for new hashes, see crypt(5) for recommendations.
-# Overrides the MD5_CRYPT_ENAB option
 #
 # Note: If you use PAM, it is recommended to use a value consistent with
 # the PAM modules configuration.
@@ -382,17 +201,6 @@ ENCRYPT_METHOD SHA512
 #YESCRYPT_COST_FACTOR 5
 
 #
-# List of groups to add to the user's supplementary group set
-# when logging in from the console (as determined by the CONSOLE
-# setting).  Default is none.
-#
-# Use with caution - it is possible for users to gain permanent
-# access to these groups, even when not logged in from the console.
-# How to do it is left as an exercise for the reader...
-#
-# CONSOLE_GROUPS is currently not supported
-
-#
 # Should login be allowed if we can't cd to the home directory?
 # Default is no.
 #
@@ -405,12 +213,6 @@ DEFAULT_HOME	yes
 # their home directory in /etc/passwd to avoid a spurious warning.
 #
 NONEXISTENT	/nonexistent
-
-#
-# If this file exists and is readable, login environment will be
-# read from it.  Every line should be in the form name=value.
-#
-# ENVIRON_FILE is currently not supported
 
 #
 # If defined, this command is run when removing a user.
@@ -458,14 +260,6 @@ USERGROUPS_ENAB yes
 # primary group.
 #
 #GRANT_AUX_GROUP_SUBIDS yes
-
-#
-# Prevents an empty password field to be interpreted as "no authentication
-# required".
-# Set to "yes" to prevent for all accounts
-# Set to "superuser" to prevent for UID 0 / root (default)
-# Set to "no" to not prevent for any account (dangerous, historical default)
-# PREVENT_NO_AUTH is currently not supported
 
 #
 # Select the HMAC cryptography algorithm.

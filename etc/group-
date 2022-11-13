@@ -46,13 +46,12 @@ tss:x:975:
 uuidd:x:68:
 avahi:x:974:
 polkitd:x:102:
-rtkit:x:133:
-sddm:x:973:
 usbmux:x:140:
+sddm:x:973:
 bkmo:x:1000:
 git:x:972:
-geoclue:x:971:
-saned:x:970:
+rtkit:x:133:
+saned:x:971:
 cups:x:209:
-guest:x:1001:
+sambauser:x:970:bkmo
 sambashare:x:969:bkmo
