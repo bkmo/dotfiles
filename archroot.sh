@@ -23,7 +23,7 @@ echo  "Mounted and ready to arch-chroot or Snapper-Rollback"
 echo
 echo  "Commands to setup wifi connection:"
 echo  "iwctl"
-echo  "station wlan0 connect Casita5"
+echo  "station wlan0 connect "CLARO2_6AAA57 passwd:T74W7hiyzq"
 echo  "exit from iwd-iwctl"
 echo  "ping -c 3 google.com"
 echo
