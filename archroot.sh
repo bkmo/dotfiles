@@ -28,6 +28,6 @@ echo  "exit from iwd-iwctl"
 echo  "ping -c 3 google.com"
 echo
 echo  "arch-chroot /mnt to chroot"
-echo  "btrfs subvol list /mnt/btrfsroot  snapper-rollback num"
+echo  "btrfs subvol list /mnt/btrfsroot rollback num"
 echo
 echo
