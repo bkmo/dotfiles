@@ -13,8 +13,8 @@ mkdir /mnt/btrfsroot
 
 mount -o rw,noatime,compress=zstd,subvol=@ /dev/mapper/cryptroot /mnt
 mount -o rw,noatime,compress=zstd,subvol=@home /dev/mapper/cryptroot /mnt/home
-mount -o rw,noatime,fmask=0022,dmask=0022 /dev/nvme0n1p2 /mnt/efi
-mount -o rw,noatime,fmask=0022,dmask=0022 /dev/nvme0n1p2 /efi
+mount -o rw,noatime,fmask=0022,dmask=0022 /dev/nvme0n1p1 /mnt/efi
+mount -o rw,noatime,fmask=0022,dmask=0022 /dev/nvme0n1p1 /efi
 mount -o subvolid=5 /dev/mapper/cryptroot /mnt/btrfsroot
 mount -o rw,noatime,compress=zstd,subvol=@snapshots /dev/mapper/cryptroot /mnt/.snapshots
 
