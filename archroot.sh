@@ -3,7 +3,7 @@ setfont -d
 echo
 echo "Decrypting and Mounting"
 echo
-cryptsetup luksOpen /dev/nvme0n1p4 cryptroot
+cryptsetup luksOpen /dev/nvme0n1p7 cryptroot
 cryptsetup luksOpen /dev/nvme0n1p3 storage
 
 mkdir /mnt/home
